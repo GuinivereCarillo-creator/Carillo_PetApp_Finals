@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  color: #fdf2f8;
+  font-family: "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial,
+    sans-serif;
+  background-color: #3b0f6b;
+  background-image:
+    radial-gradient(circle at 14% 0%, rgba(249, 168, 212, 0.38), transparent 46%),
+    radial-gradient(circle at 86% 8%, rgba(251, 207, 232, 0.3), transparent 42%),
+    linear-gradient(165deg, #2e0a52 0%, #4c1d95 52%, #7c3aed 100%);
+  background-attachment: fixed;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+::selection {
+  background: rgba(249, 168, 212, 0.45);
+}
+
+.select-caret {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='%23f9a8d4'%3E%3Cpath d='M5.5 7.5L10 12l4.5-4.5z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.9rem center;
+  background-size: 1.15rem;
+}
